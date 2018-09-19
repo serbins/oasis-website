@@ -257,7 +257,6 @@ h2 {
 @media (max-width: 900px) {
   .hero-section, .residential-windows-section, .screens-section, .commercial-section, .about-section {
     height: auto;
-    width: auto;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
