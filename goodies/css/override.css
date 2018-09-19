@@ -149,7 +149,10 @@ h2 {
   height: 100vh;
   width: 100%;
   background: url('../img/hero.png');
-  background-size: cover;
+  -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
   background-position: left center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -173,7 +176,10 @@ h2 {
   height: 800px;
   width: 100%;
   background: url('../img/windows-bg.png');
-  background-size: cover;
+  -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
   background-position: left center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -184,7 +190,10 @@ h2 {
   height: 800px;
   width: 100%;
   background: url('../img/screen-bg.png');
-  background-size: cover;
+  -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
   background-position: left center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -203,7 +212,10 @@ h2 {
   height: 800px;
   width: 100%;
   background: url('../img/commercial-bg.png');
-  background-size: cover;
+  -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
   background-position: left center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -214,7 +226,10 @@ h2 {
   height: 800px;
   width: 100%;
   background: url('../img/about.png');
-  background-size: cover;
+  -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
   background-position: left center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -242,6 +257,11 @@ h2 {
 @media (max-width: 900px) {
   .hero-section, .residential-windows-section, .screens-section, .commercial-section, .about-section {
     height: auto;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     padding: 0 0 100px 0;
     background-position: center ;
 
