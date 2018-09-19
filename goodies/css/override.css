@@ -256,14 +256,14 @@ h2 {
 
 @media (max-width: 900px) {
   .hero-section, .residential-windows-section, .screens-section, .commercial-section, .about-section {
-    
-    width: 100%;
+    height: auto;
+    width: auto;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     padding: 0 0 100px 0;
-    background-position: center center;
+    background-position: center;
 
   }
 }
