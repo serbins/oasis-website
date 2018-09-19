@@ -187,7 +187,6 @@ h2 {
 }
 
 .screens-section {
-
   width: 100%;
   background: url('../img/screen-bg.png');
   -webkit-background-size: cover;
@@ -262,6 +261,7 @@ h2 {
     background-size: cover !important;
     background-attachment: fixed !important;
     height: auto !important;
+    background-attachment: scroll;
     padding: 0 0 100px 0;
   }
 }
