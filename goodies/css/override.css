@@ -254,7 +254,7 @@ h2 {
 
 /* MEDIA */ 
 
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
   .hero-section, .residential-windows-section, .screens-section, .commercial-section, .about-section {
     height: auto;
     -webkit-background-size: cover;
@@ -265,7 +265,7 @@ h2 {
     background-position: center;
 
   }
-}
+} */
 
 @media (max-width: 600px) {
   .mobile {
