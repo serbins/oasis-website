@@ -254,18 +254,16 @@ h2 {
 
 /* MEDIA */ 
 
-/* @media (max-width: 900px) {
+@media (max-width: 900px) {
   .hero-section, .residential-windows-section, .screens-section, .commercial-section, .about-section {
     height: auto;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    width: 100%;
+    background-size: contain;
     padding: 0 0 100px 0;
     background-position: center;
 
   }
-} */
+}
 
 @media (max-width: 600px) {
   .mobile {
