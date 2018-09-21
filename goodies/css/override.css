@@ -297,8 +297,8 @@ h2 {
     padding-top: 65px;
   }
   h1 {
-    font-size: 45px !important;
-    line-height: 70px;
+    font-size: 35px !important;
+    line-height: 40px;
   }
 }
 
@@ -308,6 +308,7 @@ h2 {
     width: 100vw;
     scroll-behavior: none;
     padding-top:50px;
+    background-position: center left;
   }
   .residential-windows-section, .screens-section, .commercial-section, .about-section {
     display: none;
@@ -319,7 +320,7 @@ h2 {
     font-size: 25px;
   }
   h3 {
-    font-size: 23px;
+    font-size: 35px;
   }
   .btn-primary {
     width: 340px;
