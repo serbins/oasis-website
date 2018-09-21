@@ -303,12 +303,15 @@ h2 {
 }
 
 @media (max-width: 450px) {
+  body {
+    background: url("../img/hero-2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+
   .hero-section {
-    height: 100vh !important;
-    width: 100vw;
-    scroll-behavior: none;
-    padding-top:50px;
-    background-position: center left;
+    background: none;
   }
   .residential-windows-section, .screens-section, .commercial-section, .about-section {
     display: none;
