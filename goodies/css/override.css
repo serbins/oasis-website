@@ -20,7 +20,7 @@ p, a {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   letter-spacing: 1px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .pad {
@@ -52,6 +52,11 @@ i {
   padding-bottom: 0;
 }
 
+.modal, .modal-body {
+  -webkit-overflow-scrolling: touch;
+  -moz-overflow-scrolling: touch;
+}
+
 .mobile {
   visibility: hidden;
 }
@@ -63,7 +68,7 @@ i {
 
 html, body {
   overflow-x: hidden;
-  position: relative;
+
 }
 
 .border-right {
@@ -130,6 +135,9 @@ h2 {
   font-weight: bolder;
   color: white;
   position: relative;
+}
+h3 {
+  padding: 12px 0 0 0;
 }
 
 .under-text {
