@@ -393,10 +393,9 @@ a:not([href]):not([tabindex]) {
   h2 {
     font-size: 45px;
   }
-  h3 {
+  h4 {
     font-size: 35px;
     padding: 8px 0;
-    text-align: center;
   }
   .gigantic-font {
     font-size: 85px !important;
@@ -418,7 +417,9 @@ a:not([href]):not([tabindex]) {
   }
   .special-font {
     font-family: 'Petit Formal Script', cursive;
-    font-size: 15px;
+    font-size: 20px;
+    margin-top:5px;
+    text-align: center;
   }
   .btn-primary {
     width: 340px;
