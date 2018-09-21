@@ -388,7 +388,7 @@ a:not([href]):not([tabindex]) {
   h1 {
     text-align: center;
     font-size: 25px !important;
-    margin-top: 50px !important;
+    margin-top: 100px !important;
   }
   h2 {
     font-size: 45px;
@@ -396,6 +396,18 @@ a:not([href]):not([tabindex]) {
   h4 {
     font-size: 35px;
     padding: 8px 0;
+  }
+
+  .fa-calendar-alt {
+    position: absolute;
+    top: 17px;
+    left: 48%;
+    font-size: 35px;
+    transition: .3s ease-in-out;
+  }
+  
+  .book-text {
+    opacity: 0;
   }
   .gigantic-font {
     font-size: 85px !important;
