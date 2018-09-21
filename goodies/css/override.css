@@ -69,7 +69,7 @@ li {
   display: none;
 }
 
-.modal-body {
+.modal, .modal-body {
   -webkit-overflow-scrolling: touch;
 }
 
