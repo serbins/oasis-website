@@ -149,7 +149,7 @@ h2 {
 .hero-section {
   height: 800px;
   width: 100%;
-  background: url('../img/hero.png');
+  background: url('../img/hero-2.png');
   -webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -255,7 +255,7 @@ h2 {
 
 /* MEDIA */ 
 
-@media (max-width: 900px) {
+@media (max-width: 886px) {
   .hero-section, .residential-windows-section, .screens-section, .commercial-section, .about-section {
     background-position: center !important; 
     -webkit-background-size: cover !important;
@@ -267,8 +267,7 @@ h2 {
     background-attachment: scroll;
     padding: 0 0 100px 0;
   }
-}
-@media (max-width: 900px) {
+
   .hero-section:before, .residential-windows-section:before, .screens-section:before, .commercial-section:before, .about-section:before {
     background-position: center !important; 
     -webkit-background-size: cover !important;
@@ -282,12 +281,7 @@ h2 {
     left:0;
     top:0;
   }
-}
 
-@media (max-width: 600px) {
-  .mobile {
-    visibility: visible;
-  }
   .desktop {
     display: none;
   }
@@ -302,13 +296,21 @@ h2 {
   .hero-section {
     padding-top: 65px;
   }
-  
-}
-
-@media (max-width: 450px) {
   h1 {
     font-size: 65px !important;
     line-height: 70px;
+  }
+}
+
+@media (max-width: 450px) {
+  .hero-section {
+    height: 100vh !important;
+    width: 100;
+    scroll-behavior: none;
+    padding-top:100px;
+  }
+  .residential-windows-section, .screens-section, .commercial-section, .about-section {
+    display: none;
   }
   h2 {
     font-size: 45px;
@@ -325,5 +327,13 @@ h2 {
   .special-font {
     font-family: 'Petit Formal Script', cursive;
     font-size: 15px;
+  }
+  .hide {
+    display: none;
+  }
+  .book {
+    background: White;
+    border: none;
+    color: #1C9AE9;
   }
 }
