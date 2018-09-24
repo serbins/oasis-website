@@ -42,15 +42,15 @@
 
       <div class="col-sm-6">
         <h1 class="gigantic-font wow animate fadeInLeft" data-wow-delay=".3s">OASIS</h1> 
-        <img class="logo desktop-hide" src="goodies/img/logo.png" width="55px" alt="oasis window cleaning logo">
-        <h3 class="desktop-hide special-font wow animate fadeInLeft" data-wow-delay="3s">Window Cleaning</h3>
+        <img class="logo desktop-hide wow animated fadeIn" data-wow-delay=".6s" src="goodies/img/logo.png" width="55px" alt="oasis window cleaning logo">
+        <h3 class="desktop-hide special-font wow animate fadeInLeft" data-wow-delay=".9s">Window Cleaning</h3>
         <h1 class="wow animate fadeInLeft mobile-hide" data-wow-delay=".9s">WINDOW</h1>
         <h1 class="wow animate fadeInLeft mobile-hide" data-wow-delay="1.3s">CLEANING</h1>
-        <h3 class="special-font wow animate fadeInLeft mobile-hide" data-wow-delay="3s">Servicing Sonoma County Since 1977! <img src="goodies/img/logo.png" width="45px" alt=""></h3>
+        <h3 class="special-font wow animate fadeInLeft mobile-hide" data-wow-delay="2.5s">Servicing Sonoma County Since 1977! <img src="goodies/img/logo.png" width="45px" alt=""></h3>
         
-        <a href="mailto:steves@oasispros.com" class="mobile-hide btn btn-primary animated wow fadeInUp" data-wow-delay="2.5s"><i class="fas fa-paper-plane"></i> Contact Us Today!</a>
-        <a data-toggle="modal" data-target="#residentialModal" class="btn btn-primary animated wow fadeInUp desktop-hide" data-wow-delay="3.3s"><i class="fas fa-home"></i> Residential</a>
-        <a data-toggle="modal" data-target="#commercialModal" class="btn btn-primary animated wow fadeInUp desktop-hide" data-wow-delay="3.5s"><i class="fas fa-store"></i> Commercial</a>
+        <a href="mailto:steves@oasispros.com" class="mobile-hide btn btn-primary animated wow fadeInUp" data-wow-delay="3s"><i class="fas fa-paper-plane"></i> Contact Us Today!</a>
+        <a data-toggle="modal" data-target="#residentialModal" class="btn btn-primary animated wow fadeInUp desktop-hide" data-wow-delay="2.3s"><i class="fas fa-home"></i> Residential</a>
+        <a data-toggle="modal" data-target="#commercialModal" class="btn btn-primary animated wow fadeInUp desktop-hide" data-wow-delay="2.6s"><i class="fas fa-store"></i> Commercial</a>
       </div><!-- end col-->
 
       <div class="col-sm-6"></div>
@@ -415,88 +415,35 @@
 <!-- Quick Qoute Modal -->
 
 <!-- Pricing Modal for Screens -->
-<div class="modal fade" id="quickQuote" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade mobile-hide" id="quickQuote" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       
       <div class="modal-body text-center">
-        <img src="goodies/img/squee.png" width="150px" alt="">
+        <img src="goodies/img/squee.png" width="100px" alt="">
           
         <h5 class="wow animated rubberBand" data-wow-delay=".5s">Ballpark Quick Qoute!</h5>
         <br>
         <form>
           <input type="text" id="sqFt" placeholder="Please use only numbers">
-          <button id="generate"  type="button" class="btn btn-primary" onclick="getData(false)">Show Me My Estimated Qoute!</button>
+          <button id="generate"  type="button" class="btn btn-primary wow animated fadeInUp" data-wow-delay=".9s" onclick="getData(false)">Show Me My Estimated Qoute!</button>
           
-          <p id="result"></p>
+          <p class="wow animated fubberBand" id="result"></p>
         </form>
-
-        
         <br>
         <br>
-
-         
-            <a class="close-modal" data-dismiss="modal"> Close </a>
+        <a class="close-modal" data-dismiss="modal"> Close </a>
       </div>
       
     </div>
   </div>
 </div>
 
-
-
-
 <!-- JS FILES  -->
 <script src="goodies/js/jquery-v-3.3.1.js"></script>
 <script src="goodies/js/bootstrap.min.js"></script>
 <script src="goodies/js/wow.js"></script>
 <script src="goodies/js/app.js"></script>
-  
-<!-- wow js init -->
-<script> new WOW().init();
 
-/* Quick Quote Pop Up! */
-setTimeout(function() {
-    $('#quickQuote').modal();
-}, 000);
-
-/* SMOOTH SCROLL */
-
-// Select all links with hashes
-$('a[href*="#"]')
-  // Remove links that don't actually link to anything
-  .not('[href="#"]')
-  .not('[href="#0"]')
-  .click(function(event) {
-    // On-page links
-    if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-      && 
-      location.hostname == this.hostname
-    ) {
-      // Figure out element to scroll to
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      // Does a scroll target exist?
-      if (target.length) {
-        // Only prevent default if animation is actually gonna happen
-        event.preventDefault();
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000, function() {
-          // Callback after animation
-          // Must change focus!
-          var $target = $(target);
-          $target.focus();
-          if ($target.is(":focus")) { // Checking if the target was focused
-            return false;
-          } else {
-            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-            $target.focus(); // Set focus again
-          };
-        });
-      }
-    }
-  });</script> 
 </body>
 </html>
