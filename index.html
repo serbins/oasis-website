@@ -411,6 +411,41 @@
   </div>
 </div><!-- end commercial mobile modal -->
 
+
+<!-- Quick Qoute Modal -->
+
+<!-- Pricing Modal for Screens -->
+<div class="modal fade" id="quickQuote" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      
+      <div class="modal-body text-center">
+        <img src="goodies/img/squee.png" width="150px" alt="">
+          
+        <h5 class="wow animated rubberBand" data-wow-delay=".5s">Ballpark Quick Qoute!</h5>
+        <br>
+        <form>
+          <input type="text" id="sqFt" placeholder="enter only a number">
+          <button id="generate"  type="button" class="btn btn-primary" onclick="getData(false)">Show Me My Estimated Qoute!</button>
+          
+          <p id="result"></p>
+        </form>
+
+        
+        <br>
+        <br>
+
+         
+            <a class="close-modal" data-dismiss="modal"> Close </a>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
 <!-- JS FILES  -->
 <script src="goodies/js/jquery-v-3.3.1.js"></script>
 <script src="goodies/js/bootstrap.min.js"></script>
@@ -418,10 +453,15 @@
 <script src="goodies/js/app.js"></script>
   
 <!-- wow js init -->
-<script> new WOW().init();</script>
+<script> new WOW().init();
 
-<!-- SMOOTH SCROLL -->
- <script>
+/* Quick Quote Pop Up! */
+setTimeout(function() {
+    $('#quickQuote').modal();
+}, 5000);
+
+/* SMOOTH SCROLL */
+
 // Select all links with hashes
 $('a[href*="#"]')
   // Remove links that don't actually link to anything

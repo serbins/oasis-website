@@ -330,6 +330,27 @@ a:not([href]):not([tabindex]) {
   opacity: 0;
 }
 
+#quickQuote .modal-body {
+  padding-top: 50px;
+}
+
+#quickQuote .btn-primary {
+  background: #282828;
+  border-radius: 0px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 16px;
+  width: 375px;
+  transition: .3s ease-in-out;
+}
+
+input[type="text"]:focus {
+  padding: 12px;
+  border-bottom: 5px solid #1C9AE9;
+}
+
 /* MEDIA */ 
 @media (max-width: 886px) {
   .hero-section, .residential-windows-section, .screens-section, .commercial-section, .about-section {
