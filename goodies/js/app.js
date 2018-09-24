@@ -46,9 +46,9 @@ $('a[href*="#"]')
   });
 
   /* Quick Quote Pop Up! */
-  setTimeout(function() {
-    $('#quickQuote').modal();
-}, 5000);
+//   setTimeout(function() {
+//     $('#quickQuote').modal();
+// }, 5000);
 
   // Quote App 
   $("#generate").click(function() {

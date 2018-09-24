@@ -85,12 +85,41 @@
             <p>Minor Screen repair on site is available also. Screens are cleaned with a Fantastic product that dissolves dust, dirt and adds UV Protectant as well, to prevent screening from drying out and becoming brittle.</p>
             <p>Minimal service $150.</p>         
             <p>Service schedules available if desired.</p>
-            <a href="https://housecallpro.com/book/Oasis-Window-Cleaning/65ada31b90834cb796f568f1c1f69f82" class="btn btn-primary animated wow fadeInUp" data-wow-delay=".5s"><i class="fas fa-search"></i> VIEW OUR PRICING</a>
+            <a data-toggle="modal" data-target="#quickQuote" class="btn btn-primary animated wow fadeInUp" data-wow-delay=".5s"><i class="fas fa-search"></i> VIEW OUR PRICING</a>
+            
           </div><!-- end col-->
         </div><!-- end row -->
 
       </div><!-- container -->
     </div><!-- end residential section -->
+
+    <!-- Quick Qoute Modal -->
+
+<!-- Pricing Modal for Screens -->
+<div class="modal fade mobile-hide" id="quickQuote" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      
+      <div class="modal-body text-center">
+        <img src="goodies/img/squee.png" width="100px" alt="">
+          
+        <h5 class="wow animated rubberBand" data-wow-delay=".5s">Ballpark Quick Quote!</h5>
+        <p>Enter the square footage of your home</p>
+       
+        <form>
+          <input type="text" id="sqFt" placeholder="Please use only numbers">
+          <button id="generate"  type="button" class="btn btn-primary wow animated fadeInUp" data-wow-delay=".9s" onclick="getData(false)">Show Me My Estimated Quote!</button>
+          
+          <p class="wow animated fubberBand" id="result"></p>
+        </form>
+        <br>
+        <br>
+        <a href="https://housecallpro.com/book/Oasis-Window-Cleaning/65ada31b90834cb796f568f1c1f69f82" class="close-modal" ><i class="fa fa-thumbs-up"></i> Book Now! </a>
+      </div>
+      
+    </div>
+  </div>
+</div>
 
 <!-- RESIDENTAIL SCREENS -->
 <div id="screens" class="screens-section">
@@ -388,7 +417,7 @@
           <div class="col-sm-12">
             <img class="img-fluid" src="goodies/img/com-windows-mobile.png" alt="">
             <h4 class="wow animated fadeInLeft">Comercial <br> Window Cleaning</h4>
-            <h6><strong>Service Information</h6> 
+            <h3><strong>Service Information</strong></h3> 
                 
             <p>By having clean storefront windows, 
             it will attract more customers to you. It also represents how professional you are.</p>
@@ -411,34 +440,6 @@
   </div>
 </div><!-- end commercial mobile modal -->
 
-
-<!-- Quick Qoute Modal -->
-
-<!-- Pricing Modal for Screens -->
-<div class="modal fade mobile-hide" id="quickQuote" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      
-      <div class="modal-body text-center">
-        <img src="goodies/img/squee.png" width="100px" alt="">
-          
-        <h5 class="wow animated rubberBand" data-wow-delay=".5s">Ballpark Quick Quote!</h5>
-        <p>Enter the square footage of your home</p>
-       
-        <form>
-          <input type="text" id="sqFt" placeholder="Please use only numbers">
-          <button id="generate"  type="button" class="btn btn-primary wow animated fadeInUp" data-wow-delay=".9s" onclick="getData(false)">Show Me My Estimated Quote!</button>
-          
-          <p class="wow animated fubberBand" id="result"></p>
-        </form>
-        <br>
-        <br>
-        <a class="close-modal" data-dismiss="modal"> Close </a>
-      </div>
-      
-    </div>
-  </div>
-</div>
 
 <!-- JS FILES  -->
 <script src="goodies/js/jquery-v-3.3.1.js"></script>
