@@ -53,8 +53,10 @@ $('a[href*="#"]')
   // Quote App 
   $("#generate").click(function() {
     let sqFt = document.getElementById("sqFt").value;
-  
-    if (sqFt < 1000 ) {
+    
+     if (sqFt < ' ') {
+      document.getElementById("result").innerHTML = 'Please enter a number greater than 0';
+    } else if (sqFt < 1000 ) {
       document.getElementById("result").innerHTML = 'Your estimated service quote is less than $195 and will take about 1 - 1.5 hours to be completed';
     } else if (sqFt == 1000 || sqFt <= 1200 ) {
       document.getElementById("result").innerHTML = 'Your estimated service quote is $195 - $275+ and will take about 1.5 - 2 hours to be completed';
